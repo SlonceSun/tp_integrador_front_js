@@ -1,0 +1,266 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+
+.text__logo{
+    font-size:30px;
+    font-weight: 400;    
+}
+
+.alto__img__logo{
+    height:80px;
+
+}
+
+.bg__nav__bar{
+    background-color: #343A40;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.text__nav__comprar{
+    color: rgb(12, 151, 19);
+}
+
+.text__nav{
+    font-size:18px;
+    
+}
+
+@media (max-width: 500px) {
+    .text__nav{
+        font-size:15px;
+        
+    }
+
+    .text__logo{
+        font-size:20px;
+        font-weight: 400;    
+    }
+
+    .alto__img__logo{
+        height:60px;
+    }
+
+    .bg__nav__bar{
+        padding-left: 0%;
+        padding-right: 0%;
+
+    }
+}
+
+.carr__img__width{
+    width: 100%;
+
+}
+
+
+
+.carrousel__alto{
+   
+    overflow: hidden;
+}
+
+
+.text__carrousel{
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: right;
+    padding-right: 80px;
+    color: white;
+
+    
+}
+
+.font__parrafo__carrou{
+    font-size: 120%;
+
+}
+
+.font__parrafo__carrou__1100{
+    display:none;
+}
+
+
+
+.carousel-item::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #000000;
+    opacity: 0.5;
+}
+
+/*MEDIA QUERYES*/
+
+@media (max-width: 1010px) {
+    .text__carrousel {
+        position:relative;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        color: rgb(0, 0, 0);
+    }
+    .h1__text__carrousel{
+        font-size:30px;
+        text-align: center;
+    }
+
+    .font__parrafo__carrou{
+        font-size:15px;
+        text-align: center;
+    }
+    .text__botones{
+        font-size:10px;
+        justify-content: center;
+    }
+
+    .font__parrafo__carrou{
+        display: none;
+    
+    }
+    .font__parrafo__carrou__1100{
+        display: flex;
+        font-size: 110%;
+    }
+    .text__carrousel{
+        text-align: center;
+        color: white;
+    
+        
+    }
+    
+    
+  }
+
+.margen__form{
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.color__boton { 
+    background: #7daa29; 
+    color: rgb(255, 255, 255); 
+    border-color: #7daa29;
+  } 
+
+  .text__parraf__form{
+    size:15px;
+
+  }
+    
+
+
+.footer{
+    background: linear-gradient(90deg,#1d3744 0%, #1d5271 95%);
+    
+}
+
+.footer__text{
+    font-size: 18px;
+
+}
+
+@media (max-width: 1000px) {
+    .footer__text{
+        font-size: 15px;
+
+    }
+
+}
+
+#subrayado {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+
+  }
+
+.flex__izq{
+    object-fit: cover;
+    overflow: hidden;
+    flex:50%;
+}
+  
+.flex__der{
+
+    background-color: #343A40;
+    color:#ffffff;
+    flex:50%;
+    border-left-style: solid;
+    border-width: 1px;
+
+}
+
+
+.img__honolulu{
+    width: 100%;
+
+}
+
+  @media (max-width: 1000px) {
+    .flex-container {
+      flex-direction: column;
+    }
+    .flex__der .flex__izq{
+        flex: 100%;
+    }
+    .flex__der{
+        border-left-style: none;
+    }
+
+}
+
+/* ////////////////////////////////////////////////////////////// */
+/* PARA NAVEGAR EN EL NAVBAR A MEDIDA QUE SCROLLEO POR LA PAGINA */
+
+.nav-pills > li > a.active {
+    background-color: #343A40 !important;
+    color: #ffffff !important;
+  }/* Uso important porque sino no los aplica porque es una clase propia de Bootstrap */
+
+  .nav-pills > li > a:hover {
+    color: #ffffff !important;
+  }/* Uso important porque sino no los aplica porque es una clase propia de Bootstrap */
+
+  .nav-link-color {
+    color: #ffffff;
+  }
+
+/* ////////////////////////////////////////////////////////////// */
+
+
+.ancho__btn{
+    width: 50%;
+
+}
+
+.color__black{
+    color: black;
+}
+
+.alt__tot__pag{
+    height: 50px;
+}
+
+.input-group-text{
+    color:rgb(0, 64, 133)!important; 
+    background-color: rgb(204, 229, 255)!important;
+} /* Uso important porque sino no los aplica porque es una clase propia de Bootstrap */
