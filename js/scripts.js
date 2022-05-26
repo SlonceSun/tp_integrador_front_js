@@ -39,6 +39,8 @@ var categoria       = document.getElementById ("categElegida");
       })
   })()
 
+
+
   /* HACE CALCULO DE VALOR TOTAL x CANT TICKETS CON SU CORRESPONDIENTE DESCUENTO */
 
   function montoTotalPagar(){
@@ -49,7 +51,7 @@ var categoria       = document.getElementById ("categElegida");
     }
 
     if (categoria.value == 1) {
-      totalValorTkt = totalValorTkt * ((1-dtoStudent)).toFixed(2); /* FIXME: Coloque toFixed porque sino por algun motivo el valor total daba 39.999999 */ 
+      totalValorTkt = totalValorTkt * ((1-dtoStudent)).toFixed(2); /* NOTA: Coloque toFixed porque sino por algun motivo el valor total daba 39.999999 */ 
     }
 
    
@@ -68,3 +70,13 @@ var categoria       = document.getElementById ("categElegida");
 
 
 btnSubmitForm.addEventListener ('click', montoTotalPagar);
+
+function clearForm (){
+
+  totalPagar.innerHTML = "";
+  document. getElementById("form_tkts_comp"). className = "needs-validation"
+}
+
+
+
+btnBorraForm.addEventListener ('click', clearForm);
